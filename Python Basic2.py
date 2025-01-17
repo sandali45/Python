@@ -42,3 +42,20 @@ if myFunction():
   print("YES!")
 else:
   print("NO!")
+
+print("----------------------------------------------------------------")
+  #operations
+print((6 + 3) - (6 + 2))
+print(100 + 5 * 3)
+print(5 + 4 - 7 + 3)
+
+print("----------------------------------------------------------------")
+#list
+thislist = ["sua", "kai", "soobin"]
+print(thislist)
+
+It = ["sua", "kai", "soobin"]
+print(len(It))
+
+thislist = list(("sua", "kai", "soobin")) # note the double round-brackets
+print(thislist)
