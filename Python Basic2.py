@@ -59,3 +59,14 @@ print(len(It))
 
 thislist = list(("sua", "kai", "soobin")) # note the double round-brackets
 print(thislist)
+
+#Assess the lists
+thislist = ["sua", "kai", "soobin"]
+print(f"The index:"+thislist[1]);
+print(thislist[:1]);#add: #expect 1 before all shows
+print(thislist[1:]);#incuing 1 and all after that
+print(thislist[0:2]);#first one inluded but not second and show all other between this range
+print(thislist[-2]); #-1:soobin -2:kai -1:sua
+thislist = ["sua", "kai", "soobin"]
+if "sua" in thislist:
+  print("Yes, 'sua' is in the  list")
