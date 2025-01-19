@@ -70,3 +70,13 @@ print(thislist[-2]); #-1:soobin -2:kai -1:sua
 thislist = ["sua", "kai", "soobin"]
 if "sua" in thislist:
   print("Yes, 'sua' is in the  list")
+print("----------------------------------------------------------------")
+thislist = ["sua", "kai", "soobin"]
+thislist.append("vanos")
+print(thislist)
+thislist.insert(4, "choi")
+print(thislist)
+thislist = ["sua", "kai", "soobin"]
+tropical = ["Ishi", "vanos", "choi"]
+thislist.extend(tropical)
+print(thislist)
