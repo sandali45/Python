@@ -80,3 +80,19 @@ thislist = ["sua", "kai", "soobin"]
 tropical = ["Ishi", "vanos", "choi"]
 thislist.extend(tropical)
 print(thislist)
+print("----------------------------------------------------------------")
+thislist = ["Ishi", "vanos", "choi"]
+thislist.pop(1)  # Removes the element at index 1 ("vanos")
+print(thislist)  # Output: ["Ishi", "choi"]
+
+thislist.pop()  # Removes the last element ("choi")
+print(thislist)  # Output: ["Ishi"]
+
+del thislist[0]  # Removes the element at index 0 ("Ishi")
+print(thislist)  # Output: []
+
+thislist.clear()  # Clears all elements from the list
+print(thislist)  # Output: []
+
+del thislist  # Deletes the list
+
