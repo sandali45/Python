@@ -96,43 +96,29 @@ print(thislist)  # Output: []
 
 del thislist  # Deletes the list
 
-# Print a separator line
-print("----------------------------------------------------------------")
 
+print("----------------------------------------------------------------")
 # Create a list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Iterate through the list using a for loop and print each element
 for x in thislist:
   print(x)
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Recreate the list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Use a for loop with the range and length of the list to access elements by their index
 for i in range(len(thislist)):
   print(thislist[i])
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Recreate the list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Use a while loop to iterate through the list until the end
 i = 0  # Initialize the index
 while i < len(thislist):  # Loop while the index is less than the list's length
   print(thislist[i])  # Print the current element
   i = i + 1  # Increment the index
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Create another list of names
 thislist = ["sua", "kai", "soobin"]
-
 # Use a list comprehension to print each element in the list
 [print(x) for x in thislist]
