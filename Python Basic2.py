@@ -96,43 +96,57 @@ print(thislist)  # Output: []
 
 del thislist  # Deletes the list
 
-# Print a separator line
-print("----------------------------------------------------------------")
 
+print("----------------------------------------------------------------")
 # Create a list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Iterate through the list using a for loop and print each element
 for x in thislist:
   print(x)
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Recreate the list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Use a for loop with the range and length of the list to access elements by their index
 for i in range(len(thislist)):
   print(thislist[i])
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Recreate the list of names
 thislist = ["Ishi", "vanos", "choi"]
-
 # Use a while loop to iterate through the list until the end
 i = 0  # Initialize the index
 while i < len(thislist):  # Loop while the index is less than the list's length
   print(thislist[i])  # Print the current element
   i = i + 1  # Increment the index
-
-# Print another separator line
 print("----------------------------------------------------------------")
-
 # Create another list of names
 thislist = ["sua", "kai", "soobin"]
-
 # Use a list comprehension to print each element in the list
 [print(x) for x in thislist]
+print("----------------------------------------------------------------")
+# Create a list of names
+names = ["sua", "kai", "soobin", "Ishi", "vanos"]
+newlist = []# Initialize an empty list
+# Loop through the names and check if 'a' is in each name
+for x in names:
+  if "a" in x:  # If 'a' is found in the name
+    newlist.append(x)  # Add the name to the new list
+# Print the new list containing names with 'a'
+print(newlist)
+# Use a list comprehension to create a new list with names containing 'o'
+newlist = [x for x in names if "o" in x]
+print(newlist)
+# Use a list comprehension to create a new list excluding the name 'sua'
+newlist = [x for x in names if x != "sua"]
+print(newlist)
+# Use a list comprehension to create a list of numbers from 0 to 9
+newlist = [x for x in range(10)]
+print(newlist)
+# Use a list comprehension to create a list of numbers from 0 to 9 where x is less than 5
+newlist = [x for x in range(10) if x < 5]
+# Use a list comprehension to create a list where every element is the string 'soobie'
+newlist = ['soobie' for x in names]
+print(newlist)
+# Use a conditional expression inside a list comprehension
+# Replace 'kai' with 'kailove' in the list, keeping all other names unchanged
+newlist = [x if x != "kai" else "kailove" for x in names]
+print(newlist)
