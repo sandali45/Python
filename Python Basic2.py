@@ -122,3 +122,31 @@ print("----------------------------------------------------------------")
 thislist = ["sua", "kai", "soobin"]
 # Use a list comprehension to print each element in the list
 [print(x) for x in thislist]
+print("----------------------------------------------------------------")
+# Create a list of names
+names = ["sua", "kai", "soobin", "Ishi", "vanos"]
+newlist = []# Initialize an empty list
+# Loop through the names and check if 'a' is in each name
+for x in names:
+  if "a" in x:  # If 'a' is found in the name
+    newlist.append(x)  # Add the name to the new list
+# Print the new list containing names with 'a'
+print(newlist)
+# Use a list comprehension to create a new list with names containing 'o'
+newlist = [x for x in names if "o" in x]
+print(newlist)
+# Use a list comprehension to create a new list excluding the name 'sua'
+newlist = [x for x in names if x != "sua"]
+print(newlist)
+# Use a list comprehension to create a list of numbers from 0 to 9
+newlist = [x for x in range(10)]
+print(newlist)
+# Use a list comprehension to create a list of numbers from 0 to 9 where x is less than 5
+newlist = [x for x in range(10) if x < 5]
+# Use a list comprehension to create a list where every element is the string 'soobie'
+newlist = ['soobie' for x in names]
+print(newlist)
+# Use a conditional expression inside a list comprehension
+# Replace 'kai' with 'kailove' in the list, keeping all other names unchanged
+newlist = [x if x != "kai" else "kailove" for x in names]
+print(newlist)
