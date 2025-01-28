@@ -32,4 +32,24 @@ print(tuple1)  # Prints tuple1
 print(tuple2)  # Prints tuple2
 print(tuple3)  # Prints tuple3
 
-# Tu
+print("----------------------------------------------------------------")
+# Example tuple
+thistuple = ("Sua", "kai", "soobin")
+# Accessing the second element (index 1)
+print(thistuple[1])  # Output: "kai"
+# Accessing the last element using negative indexing
+print(thistuple[-1])  # Output: "soobin"
+# A longer tuple for slicing examples
+thistuple = ("Sua", "kai", "soobin", "vanos", "jun", "choi", "ishi")
+# Slicing the tuple: Get elements from index 2 to 4 (5 is excluded)
+print(thistuple[2:5])  # Output: ("soobin", "vanos", "jun")
+# Slicing the tuple: Get elements from the start to index 3 (4 is excluded)
+print(thistuple[:4])  # Output: ("Sua", "kai", "soobin", "vanos")
+# Slicing the tuple: Get elements from index 2 to the end
+print(thistuple[2:])  # Output: ("soobin", "vanos", "jun", "choi", "ishi")
+# Slicing the tuple: Get elements from index -4 to -1 (negative indexing)
+print(thistuple[-4:-1])  # Output: ("vanos", "jun", "choi")
+# Check if an element exists in the tuple using the `in` keyword
+thistuple1 = ("Sua", "kai", "soobin", "vanos", "jun", "choi", "ishi")
+if "kai" in thistuple1:  # Case-sensitive check
+  print("Yes, 'kai' is in the name tuple")  # This will not print if "Kai" != "kai" simple capital leteers matters
