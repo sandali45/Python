@@ -76,3 +76,25 @@ print(thistuple)  # Output: ('Sua', 'soobin')
 #thistuple = ("Sua", "kai", "soobin")
 #del thistuple
 #print(thistuple) #this will raise an error because the tuple no longer exists
+names = ("Sua", "kai", "soobin")
+print(names)
+print("----------------------------------------------------------------");
+# Unpacking a tuple
+name = ("Sua", "kai", "soobin")  # Tuple with 3 elements
+(vanos, choi, ishi) = name  # Assign each element to a variable
+print(vanos)  # Output: Sua
+print(ishi)   # Output: soobin
+print(choi)   # Output: kai  (Note: choi gets assigned the second element)
+# If the number of variables is less than the number of values, 
+# use * to collect the remaining values in a list
+names = ("Sua", "kai", "soobin", "vanos", "choi")
+(green, yellow, *red) = names  # First two values assigned separately, rest go into a list
+print(green)   # Output: Sua
+print(yellow)  # Output: kai
+print(red)     # Output: ['soobin', 'vanos', 'choi'] (Remaining values as a list)
+# Using * in the middle to collect values between specific assignments
+names = ("Sua", "kai", "soobin", "vanos", "choi")
+(x, *y, z) = names  # First and last values assigned separately, middle values go into a list
+print(x)  # Output: Sua
+print(y)  # Output: ['kai', 'soobin', 'vanos'] (Middle values as a list)
+print(z)  # Output: choi
