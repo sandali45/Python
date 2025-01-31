@@ -29,3 +29,17 @@ print(f"The count 5 is: {x}")
 thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
 x = thistuple.index(8)
 print(f"The index 8 number is: {x}")
+print("----------------------------------------------------------------");
+# Creating a set, duplicates are automatically removed
+thisset = {"sua", "choi", "vanos", True, 1, 2}  
+print(thisset)  # Output: {'sua', 'choi', 1, 2, True, 'vanos'}  
+# Note that sets do not allow duplicates, so even if you add the same element, it will only appear once.
+# Checking the length of a set (number of unique elements)
+thisset = {"sua", "kai", "soobin"}
+print(len(thisset))  # Output: 3 (3 unique elements)
+# Checking the type of a set
+myset = {"sua", "kai", "soobin"}
+print(type(myset))  # Output: <class 'set'> (The type is 'set')
+# Creating a set using the set() constructor with a tuple
+thisset = set(("sua", "kai", "soobin"))  # Creating a set from a tuple (Note the double round brackets)
+print(thisset)  # Output: {'sua', 'kai', 'soobin'} (Creates a set with the unique elements from the tuple)
