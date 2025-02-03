@@ -43,3 +43,15 @@ print(type(myset))  # Output: <class 'set'> (The type is 'set')
 # Creating a set using the set() constructor with a tuple
 thisset = set(("sua", "kai", "soobin"))  # Creating a set from a tuple (Note the double round brackets)
 print(thisset)  # Output: {'sua', 'kai', 'soobin'} (Creates a set with the unique elements from the tuple)
+print("----------------------------------------------------------------");
+# Iterating through a set using a for loop
+thisset = {"sua", "kai", "soobin"}
+for x in thisset:
+  print(x)  # Prints each element in the set (order is unpredictable)
+# Checking if an element exists in the set
+thisset = {"sua", "kai", "soobin"}
+print("sua" in thisset)  # Output: True (because "sua" is in the set)
+print("bb" in thisset)  # Output: False (because "bb" is not in the set)
+# Checking if an element is NOT in the set
+thisset = {"sua", "kai", "soobin"}
+print("vanos" not in thisset)  # Output: True (since "vanos" is not in the set)
