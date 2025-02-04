@@ -55,3 +55,15 @@ print("bb" in thisset)  # Output: False (because "bb" is not in the set)
 # Checking if an element is NOT in the set
 thisset = {"sua", "kai", "soobin"}
 print("vanos" not in thisset)  # Output: True (since "vanos" is not in the set)
+print("----------------------------------------------------------------");
+thisset = {"sua", "kai", "soobin"}
+thisset.add("vanos")
+print(thisset)
+thisset = {"sua", "kai", "soobin"}
+tropical = {"choi", "vanos", "Ishi"}
+thisset.update(tropical)
+print(thisset)
+thisset = {"sua", "kai", "soobin"}
+mylist = ["choi", "vanos"]
+thisset.update(mylist)
+print(thisset)
