@@ -56,14 +56,17 @@ print("bb" in thisset)  # Output: False (because "bb" is not in the set)
 thisset = {"sua", "kai", "soobin"}
 print("vanos" not in thisset)  # Output: True (since "vanos" is not in the set)
 print("----------------------------------------------------------------");
+# Adding a single element to a set
 thisset = {"sua", "kai", "soobin"}
-thisset.add("vanos")
-print(thisset)
+thisset.add("vanos")  # Adds "vanos" to the set
+print(thisset)  # Output: {'sua', 'kai', 'soobin', 'vanos'}
+# Merging two sets using update()
 thisset = {"sua", "kai", "soobin"}
 tropical = {"choi", "vanos", "Ishi"}
-thisset.update(tropical)
-print(thisset)
+thisset.update(tropical)  # Adds all elements of 'tropical' set to 'thisset'
+print(thisset)  # Output: {'sua', 'kai', 'soobin', 'choi', 'vanos', 'Ishi'}
+# Adding elements from a list using update()
 thisset = {"sua", "kai", "soobin"}
 mylist = ["choi", "vanos"]
-thisset.update(mylist)
-print(thisset)
+thisset.update(mylist)  # Adds all elements from 'mylist' to 'thisset'
+print(thisset)  # Output: {'sua', 'kai', 'soobin', 'choi', 'vanos'}
