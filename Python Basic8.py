@@ -35,4 +35,4 @@ print(thislist)  # Output: ['choi', 'ishi', 'kai', 'soobin', 'vanos']
 # Reversing the order of the list (note: this is not sorting, just flipping the order)
 thislist = ["kai", "vanos", "choi", "soobin", "ishi"]
 thislist.reverse()
-print(thislist)  # Output: ['ishi', 'soobin', 'choi', 'vanos', 'kai']
+print(thislist) 
