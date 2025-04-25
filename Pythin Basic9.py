@@ -23,3 +23,44 @@ print(thistuple[-4:-1])  # Output: ('soobin', 'choi', 'bg') - last four items bu
 thistuple = ("kai", "vanos", "choi")
 if "kai" in thistuple:
   print("Yes, 'kai' is in the fruits tuple")  # Output: Yes, 'kai' is in the fruits tuple
+
+# Original tuple
+thistuple = ("kai", "vanos", "soobin")
+
+# Convert tuple to list to modify it (tuples are immutable)
+y = list(thistuple)
+
+# Add an item to the list
+y.append("kai")
+
+# Convert list back to tuple
+thistuple = tuple(y)
+# thistuple now is: ('kai', 'vanos', 'soobin', 'kai')
+
+
+# Start again with the original tuple
+thistuple = ("kai", "vanos", "soobin")
+
+# Create a new tuple with one item
+y = ("kai",)
+
+# Concatenate the tuples
+thistuple += y
+# thistuple now is: ('kai', 'vanos', 'soobin', 'kai')
+
+# Print the updated tuple
+print(thistuple)  # Output: ('kai', 'vanos', 'soobin', 'kai')
+
+
+# Start again with the original tuple
+thistuple = ("kai", "vanos", "soobin")
+
+# Convert to list to modify
+y = list(thistuple)
+
+# Remove 'kai' from the list
+y.remove("kai")
+
+# Convert back to tuple
+thistuple = tuple(y)
+# thistuple now is: ('vanos', 'soobin')
