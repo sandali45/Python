@@ -18,3 +18,20 @@ fruits = ("kai", "vanos", "soobin", "choi", "ishi")
 print(green)   # Output: kai
 print(tropic)  # Output: ['vanos', 'soobin', 'choi']
 print(red)     # Output: ishi
+
+# Looping through a tuple using a for loop (direct element access)
+thistuple = ("kai", "vanos", "soobin")
+for x in thistuple:
+  print(x)  # Prints each item one by one: kai, vanos, soobin
+
+# Looping through the tuple using range and indexing
+thistuple = ("kai", "vanos", "soobin")
+for i in range(len(thistuple)):
+  print(thistuple[i])  # Prints elements using index: kai, vanos, soobin
+
+# Looping using while loop with manual index
+thistuple = ("kai", "vanos", "soobin")
+i = 0
+while i < len(thistuple):
+  print(thistuple[i])  # Prints each item: kai, vanos, soobin
+  i = i + 1
