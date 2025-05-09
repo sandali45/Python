@@ -26,3 +26,19 @@ print(type(myset))  # Output: <class 'set'>
 # Creating a set using the set() constructor and tuple
 thisset = set(("kai", "vanos", "soobin"))  # double brackets: tuple inside set()
 print(thisset)  # Output: {'kai', 'vanos', 'soobin'}
+
+# Define a set with 3 elements
+thisset = {"kai", "vanos", "soobin"}
+
+# Loop through the set and print each element
+for x in thisset:
+  print(x)  # Output will be in any order (sets are unordered)
+
+# Check if "banana" is in the set
+thisset = {"kai", "vanos", "soobin"}
+print("banana" in thisset)  # False, since "banana" is not an element of the set
+
+# Check if "banana" is NOT in the set
+thisset = {"kai", "vanos", "soobin"}
+print("banana" not in thisset)  # True, because "banana" is not present
+
