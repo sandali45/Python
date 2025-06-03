@@ -34,3 +34,12 @@ print(type(thisdict))  # Outputs: <class 'dict'>
 # Create a dictionary using the dict() constructor
 thisdict = dict(name = "John", age = 36, country = "Norway")
 print(thisdict)  # Outputs: {'name': 'John', 'age': 36, 'country': 'Norway'}
+
+#update
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+thisdict.update({"year": 2020})
+
