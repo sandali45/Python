@@ -43,3 +43,23 @@ thisdict = {
 }
 thisdict.update({"year": 2020})
 
+kid1 = {
+  "name" : "Emil",
+  "year" : 2004
+}
+kid2 = {
+  "name" : "Tobias",
+  "year" : 2007
+}
+kid3 = {
+  "name" : "Linus",
+  "year" : 2011
+}
+
+myfamily = {
+  "kid1" : kid1,
+  "kid2" : kid2,
+  "kid3" : kid3,
+}
+
+print(myfamily)
